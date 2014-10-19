@@ -12,6 +12,11 @@ $(document).ready(function(){
   		$(".overlay").fadeOut(1000);
   	});
 
+  	$("#guessButton").click(function){
+  		var toAdd = $("input[name=userGuess]").val();
+  		$("#guessList").append("<li>" + toAdd + "</li>")
+  	});
+
 });
 
 
